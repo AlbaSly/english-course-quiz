@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::after, *::before {
+  transition: all .5s ease-in;
+}
+
+body {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('../public/bg.jpg');
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 70vh;
+    height: 90vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .card {
+    width: 120vh;
+  }
+}
+
+@media (min-width: 1400px) {
+  .card {
+    width: 140vh;
+  }
+}
+
+.bar-container {
+  margin: 0;
+  border: 5px solid gray;
+}
+
+.bar {
+  transition: width .3s ease-out;
+}
+
+.fade {
+  animation: fade-in .5s ease-in;
+}
+
+.answers {
+  margin-top: 18px;
+  row-gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .answers {
+    margin-top: 0;
+  }
+}
+
+.answer {
+  transition: all .1s ease-in-out;
+}
+
+.answer:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
