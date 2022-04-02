@@ -20,7 +20,7 @@ const Quiz = (): JSX.Element => {
             <div className={`card mx-auto md:flex items-center justify-center gap-2 border-gray-400 border-2 rounded-xl shadow-2xl px-4 py-20`}>
                 {showScore 
                 ?   
-                    <div className={`text-center text-2xl ${score <= 2? 'text-red-500' : score >= 5 ? 'text-green-500' : 'text-yellow-500'} font-bold`}>
+                    <div className={`text-center text-2xl ${((100 / QUESTIONS.length) * (score)) <= 25? 'text-red-500' : ((100 / QUESTIONS.length) * (score)) >= 75 ? 'text-green-500' : 'text-yellow-500'} font-bold`}>
                         <div className='uppercase'>
                             You scored {score} out of {QUESTIONS.length}
                         </div>
