@@ -44,7 +44,7 @@ const Quiz = (): JSX.Element => {
                 </div>
                 </>}
             </div>
-            <p className="text-gray-200">by Raxel Arias {new Date().getFullYear()}</p>
+            <p className="text-gray-200 text-center">by Raxel Arias {new Date().getFullYear()}</p>
         </>
     )
 }

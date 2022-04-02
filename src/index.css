@@ -9,18 +9,30 @@
 body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('/bg.jpg');
   background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
+.card {
+  width: 45vh;
+}
+
 @media (min-width: 768px) {
   .card {
-    width: 100vh;
-    height: 90vh;
+    width: 90%;
   }
 }
+
+/* @media only screen and (min-width: 768px) and (min-height: 350px)  {
+  .card {
+    width: 100vh
+  }
+} */
+
 
 @media (min-width: 1280px) {
   .card {
