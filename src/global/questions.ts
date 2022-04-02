@@ -20,7 +20,7 @@ const QUESTIONS: Question[] = [
         ]
     },
     {
-        question: "\"teach your child French and you get a better child! more creativity, multitasking, and academic performance in other subjects\", it's true?",
+        question: "Teach your child French and you get a better child! more creativity, multitasking, and academic performance in other subjects, it's true?",
         answers: [
             {answerText: 'Yes', isCorrect: false},
             {answerText: 'No', isCorrect: true}
